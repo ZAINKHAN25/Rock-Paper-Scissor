@@ -7,7 +7,7 @@ function App() {
   function Game() {
     const [playerScore, setPlayerScore] = useState(0);
     const [computerScore, setComputerScore] = useState(0);
-    const [winnerName, setWinnerName] = useState('Please Select the options');
+    const [winnerName, setWinnerName] = useState('Please Select the options!');
 
     let [computeransw, setcomputeransw] = useState('');
     let [useransw, setuseransw] = useState('')
@@ -18,7 +18,7 @@ function App() {
         setuseransw('');
         setPlayerScore(0);
         setComputerScore(0);
-        setWinnerName('Please Select the options');
+        setWinnerName('Please Select the options!');
       }, 800)
     }
 
