@@ -30,6 +30,19 @@ button {
   border-radius: 8px;
   color: white;
   font-size: larger;
+  border: 3px solid #DF2E38;
+  transition: all .5s;
+  font-weight: bold;
+}
+
+button:active{
+  background-color: #DF2E38;
+  color: white;
+}
+
+button:hover{
+  color: #DF2E38;
+  background-color: transparent;
 }
 
 .paraofhome {
