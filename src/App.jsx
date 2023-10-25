@@ -60,7 +60,7 @@ function App() {
         <div className="versesarea">
           <span className="player">
             {/* i want that if user pick scissor so that come */}
-            {useransw === 'SCISSORS' && <i class="fa-regular fa-hand-scissors fa-flip-horizontal"></i>}
+            {useransw === 'SCISSORS' && <i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i>}
 
             {/* if user select the rock so that come  */}
             {useransw === 'ROCK' && <i class="fa-solid fa-hand-fist fa-rotate-90"></i>}
@@ -77,7 +77,7 @@ function App() {
             {computeransw === 'ROCK' && <i class="fa-solid fa-hand-fist fa-rotate-90"></i>}
 
             {/* if user selest the paper so that come  */}
-            {computeransw === 'PAPER' && <i class="fa-solid fa-hand fa-rotate-90"></i>}
+            {computeransw === 'PAPER' && <i class="fa-regular fa-hand fa-rotate-90"></i>}
           </span>
         </div>
         <div className="choseyourmove">Choose your move, rock paper or scissors?</div>

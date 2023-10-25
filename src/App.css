@@ -80,3 +80,12 @@ button {
 .vs{
   font-size: 30px;
 }
+
+.gameh3{
+  cursor: pointer;
+  transition: all .3s ease-in-out
+}
+
+.gameh3:hover{
+  color: #AF2D2D;
+}
