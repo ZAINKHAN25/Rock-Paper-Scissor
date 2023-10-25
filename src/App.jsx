@@ -7,10 +7,20 @@ function App() {
   function Game() {
     const [playerScore, setPlayerScore] = useState(0);
     const [computerScore, setComputerScore] = useState(0);
-    const [winnerName, setWinnerName] = useState('');
+    const [winnerName, setWinnerName] = useState('Please Select the options');
 
     let [computeransw, setcomputeransw] = useState('');
     let [useransw, setuseransw] = useState('')
+
+    function resetwithoutreload() {
+      setTimeout(() => {
+        setcomputeransw('');
+        setuseransw('');
+        setPlayerScore(0);
+        setComputerScore(0);
+        setWinnerName('Please Select the options');
+      }, 800)
+    }
 
     function userSelection(userChoice) {
       setTimeout(() => {
@@ -41,7 +51,7 @@ function App() {
     return (
       <div className="gamewrapper">
         <h1 className="gameh1">Rock Paper Scissors with Compose</h1>
-        <h3 className="gameh3">RESET THE TOUR</h3>
+        <h3 className="gameh3" onClick={resetwithoutreload}>RESET THE TOUR</h3>
         <div className="scorediv">
           <span>PLAYER SCORE: {playerScore}</span>
           <span>COMPUTER SCORE: {computerScore}</span>
