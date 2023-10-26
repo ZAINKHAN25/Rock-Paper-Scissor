@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-align: center;
   font-family: sans-serif;
+  word-wrap: break-word;
 }
 
 .App {
@@ -96,9 +97,23 @@ button:hover{
 
 .gameh3{
   cursor: pointer;
+  margin: 10px auto;
   transition: all .3s ease-in-out
 }
 
 .gameh3:hover{
   color: #AF2D2D;
+}
+
+@media (max-width:580px) {
+  .homewrapper{
+    flex-direction: column;
+    width: 95%;
+  }
+}
+
+@media (max-width:680px) {
+  .gamewrapper{
+    width: 95%;
+  }
 }
